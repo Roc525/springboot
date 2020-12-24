@@ -32,7 +32,6 @@ public class BillController {
     @GetMapping("/bills")
     public String list(Map<String, Object> map, Bill bill){
         logger.info("账单查询...." + bill);
-        logger.info("账单查询...." + bill);
 
         List<BIllProvier> billProviers = billMapper.getBills(bill);
         //获取所有供应商
